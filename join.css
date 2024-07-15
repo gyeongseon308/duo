@@ -1,0 +1,761 @@
+@charset "UTF-8";
+
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+img{border: 0; vertical-align: top;}
+a{text-decoration: none; color:black;}
+
+body{font-family: "Nanum Gothic", sans-serif;
+font-weight: 400;
+font-style: normal;}
+
+.clearFix:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+    #header{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+    #header .header_logo img{
+        float:left;
+        width: 70px;
+        margin-top: 35px;
+        margin-left: 100px;
+    }
+    #header .gnb{
+        width: 1000px;
+        margin: 0px auto;
+        padding-left: 180px;
+    }
+    
+    #header .gnb>li{
+        height: 30px;
+        float: left;
+        margin-top:35px;
+        font-size: 15pt;
+    }
+
+#header .gnb>li{
+height: 30px;
+/* float: left; */
+/* border: 1px solid red; */
+width: 170px;
+text-align: center;
+}
+
+#header .gnb>li a:hover{
+    color:#b7221b;
+}
+
+#header .gnb>li .sub{
+display: none;
+}
+/* #header .gnb>li .sub li{
+    width: 100px;  */
+
+#header .gnb>li:hover .sub{
+display: block;
+background-color: #fcd0cf83;
+border-radius: 10px;
+line-height: 40px;
+margin-top: 5px;
+
+}
+
+#header .gnb li .sub li>a{
+    font-size: 11pt;
+    color:gray
+}
+#header .gnb li .sub li>a:hover{
+    font-size: 11pt;
+    color:#b7221b;
+
+}
+    #header .header_etc .number{
+        float: right;
+        margin-top: 21px;
+        margin-right: 100px;
+        font-size: 15pt;
+        text-align: center;
+    }
+    #section .section_1 .main_box{
+        width: 1520px; height: 720px; margin: 0 auto;
+        border: 5px solid #b7221b; 
+
+    }
+    #section .section_1 .main_box .mainment_5{
+        position: relative;
+    }
+
+    #section .section_1 .main_box .main_box_img img{
+        position : relative; top:68px
+    }  
+    #section .section_2{
+        width: 1450px; margin: 0 auto;
+    }
+    #section .section_2 .section2_title{
+        margin-top: 100px; margin-bottom: 20px; font-size: 20pt;
+    }
+    #section .section_2 .process_box1{
+        width: 1450px; border: 1px solid rgba(233, 233, 233, 0.596);
+        border-radius: 20px; padding-top: 50px;
+        text-align: center; line-height: 50px;
+        box-shadow: 1px 1px 1px rgb(224, 223, 223);
+        margin-bottom: 50px;
+    }
+    #section .section_2 .process_box1 img{
+        width: 50px;
+    }
+    #section .section_2 .process_box1 h3{
+        font-size: 20pt; font-weight: bold;margin-bottom: 50px;
+    }
+    #section .section_2 .process_box1 p{
+        font-size: 16pt; margin-bottom: 50px;
+    }
+    #section .section_2 .process_box1 span{
+        background-color:#fcd0cf;
+    }
+
+    #section .process_box2{
+    width: 1450px; margin: 0 auto;
+    }
+
+    #section .process_box2 .step1_3{
+    float: left;
+    }
+    #section .process_box2 .step4_6{
+    float:left;
+    }
+    #section .process_box2 .step4_6 li{
+    float: left;
+    /* border: 1px solid rgba(233, 233, 233, 0.596); */
+    width: 450px; height: 550px; margin-left: 30px;
+    /* box-shadow: 1px 1px 1px rgb(224, 223, 223); */
+    border-radius: 20px;
+    margin-top:20px
+    }
+
+    #section .process_box2 .step1_3 li{
+    float: left; 
+    /* border: 1px solid rgba(233, 233, 233, 0.596); */
+    width: 450px; height: 550px; margin-left: 30px;
+    /* box-shadow: 1px 1px 1px rgb(224, 223, 223); */
+    
+    }
+
+    #section .process_box2 .step1_3 .step_num{
+        text-align: center; font-size:30pt;
+    }
+    #section .process_box2 .step4_6 .step_num{
+        text-align: center; font-size:30pt;
+    }
+/* step1 */
+    #section .process_box2 .step1_3 .step1 .front{
+        background-image: url(images/join_4.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 450px; height: 550px;
+        border: 1px solid rgba(233, 233, 233, 0.596);
+        border-radius: 20px;
+    }
+    #section .process_box2 .step1_3 .step1{
+        position: relative;
+    }
+    #section .process_box2 .step1_3 .step1:hover .front{
+        transform: rotateY(180deg);
+    }
+    #section .process_box2 .step1_3 .step1:hover .back{
+        transform: rotateY(0deg);
+    }
+    #section .process_box2 .step1_3 .step1a{
+        position: absolute; left:0; top:0;
+        backface-visibility: hidden;
+        transition: all 0.5s;
+        cursor:pointer;
+    }
+
+    #section .process_box2 .step1_3 .step1 .front{
+        z-index: 3;
+    }
+    #section .process_box2 .step1_3 .step1 .back{
+        transform: rotateY(180deg);
+        background-color: #b7221b;
+        background-image: url(images/join_4.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        /* border: 1px solid rgba(233, 233, 233, 0.596); */
+        width: 450px; height: 550px;
+        /* box-shadow: 1px 1px 1px rgb(224, 223, 223); */
+        border-radius: 20px;
+    }
+    #section .process_box2 .step1_3 .step_1_pink{
+        color:#fcd0cf; font-size: 70pt;
+        font-weight: bolder; margin-top: 70px;margin-left: 30px;
+    }
+
+    #section .process_box2 .step1_3 .step_1_gray{
+        color:gray; font-size: 70pt;
+        font-weight: bolder; margin-top: 60px;
+        margin-left: 250px;
+    } 
+
+    /* step2 */
+    #section .process_box2 .step1_3 .step2 h3{
+        font-size: 125pt; position:relative;
+        color:lightgrey; z-index: -5;
+    }
+    #section .process_box2 .step1_3 .step2 .front{
+        background-image: url(images/join_5.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: relative;
+        width: 450px; height: 550px;
+        border: 1px solid rgba(233, 233, 233, 0.596);
+        border-radius: 20px;
+        }
+    #section .process_box2 .step1_3 .step2 .step2_con{
+        font-size: 12pt; color: black;
+        margin-left: 300px;
+        }
+
+        #section .process_box2 .step1_3 .step2{
+        position: relative;
+    }
+    #section .process_box2 .step1_3 .step2:hover .front{
+        transform: rotateY(180deg);
+        }
+    #section .process_box2 .step1_3 .step2:hover .back{
+        transform: rotateY(0deg);}
+
+    #section .process_box2 .step1_3 .step2a{
+        position: absolute; left:0; top:0;
+        backface-visibility: hidden;
+        transition: all 0.5s;
+        cursor:pointer;}
+        
+    #section .process_box2 .step1_3 .step2 .front{
+        z-index: 3;
+        }
+    #section .process_box2 .step1_3 .step2 .back{
+        transform: rotateY(180deg);
+        background-color: #b7221b;
+        background-image: url(images/join_5.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        /* border: 1px solid rgba(233, 233, 233, 0.596); */
+        width: 450px; height: 550px;
+        /* box-shadow: 1px 1px 1px rgb(224, 223, 223); */
+        border-radius: 20px;
+
+        }
+/* step3 */
+        #section .process_box2 .step1_3 .step3{
+            position: relative;
+        }
+        #section .process_box2 .step1_3 .step3:hover .front{
+            transform: rotateY(180deg);
+        }
+        #section .process_box2 .step1_3 .step3:hover .back{
+            transform: rotateY(0deg);
+        }
+        #section .process_box2 .step1_3 .step3a{
+            position: absolute; left:0; top:0;
+            backface-visibility: hidden;
+            transition: all 0.5s;
+            cursor:pointer;
+        }
+        #section .process_box2 .step1_3 .step3 .front{
+            z-index: 3;
+            border: 1px solid rgba(233, 233, 233, 0.596);
+            border-radius: 20px;
+        }
+        #section .process_box2 .step1_3 .step3 .back{
+            transform: rotateY(180deg);
+            background-color: #b7221b;
+            border: 1px solid rgba(233, 233, 233, 0.596);
+            width: 450px; height: 550px;
+            box-shadow: 1px 1px 1px rgb(224, 223, 223);
+            border-radius: 20px;
+        }
+        
+        #section .process_box2 .step1_3 li:nth-child(3) h2{
+            font-size: 25pt;
+            text-align: center; margin-bottom: 80px; margin-top: 20px;
+            width: 200px; height: 50px;
+            border-bottom:1px solid #ffffff; margin-left: 120px;
+        }
+        #section .process_box2 .step1_3 .step3 .step3_fir{
+            margin:35px;
+            background-color: #fcd0cf; 
+            font-size:35pt; font-weight: bold;
+            color: white; width: 350px;
+            border-radius: 20px 20px 20px 0px;
+            text-align: center;
+        }
+        #section .process_box2 .step1_3 .step3 .step3_sec{
+            margin:35px;
+            background-color: #f56764; 
+            font-size:35pt; font-weight: bold;
+            color: white; width: 400px;
+            border-radius: 20px 20px 0px 20px;
+            text-align: center;
+        }
+        #section .process_box2 .step1_3 .step3 .step3_thi{
+            margin:35px;
+            background-color: #fcd0cf; 
+            font-size:35pt; font-weight: bold;
+            color: white; width: 350px;
+            border-radius: 20px 20px 20px 0px;
+            text-align: center;}
+
+        #section .process_box2 .step1_3 .step3 .front{
+            width: 450px; height: 550px;
+        }
+            
+/* step4 */
+
+        #section .process_box2 .step4_6 .step4 .front{
+            background-image: url(images/join_6.png);
+            background-size: cover;width: 450px; height: 550px;
+            border: 1px solid rgba(233, 233, 233, 0.596);
+            border-radius: 20px;
+        }
+        
+        #section .process_box2 .step4_6 .step4 .step4_con{
+            font-size: 35pt; font-weight: bolder;
+            margin-top: 350px; width: 450px;
+        }
+        #section .process_box2 .step4_6 .step4{
+            position: relative;
+        }
+        #section .process_box2 .step4_6 .step4:hover .front{
+            transform: rotateY(180deg);
+        }
+        #section .process_box2 .step4_6 .step4:hover .back{
+            transform: rotateY(0deg);
+        }
+        #section .process_box2 .step4_6 .step4a{
+            position: absolute; left:0; top:0;
+            backface-visibility: hidden;
+            transition: all 0.5s;
+            cursor:pointer;
+        }
+        /* #section .process_box2 .step4_6 .step4 .front{
+            z-index: 3;
+            background-image: url(images/join_6.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: relative;
+        width: 450px; height: 550px;
+        } */
+        #section .process_box2 .step4_6 .step4 .back{
+            transform: rotateY(180deg);
+            background-color: #b7221b;
+            background-image: url(images/join_6.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            /* border: 1px solid rgba(233, 233, 233, 0.596); */
+            width: 450px; height: 550px;
+            box-shadow: 1px 1px 1px rgb(224, 223, 223);
+            border-radius: 20px;
+        }
+
+
+        /* step5 */
+#section .process_box2 .step4_6 .step5 .front{
+        background-image: url(images/join_7.png);
+        background-size: cover;width: 450px;height: 550px;
+        border: 1px solid rgba(233, 233, 233, 0.596);
+        border-radius: 20px;}
+
+        #section .process_box2 .step4_6 .step5 .step5_con{
+            font-size: 60pt; font-weight: bolder;color: #f56764;
+            /* -webkit-text-stroke:1px white; */
+            margin-top: 100px; width: 450px;
+            text-align: center;
+            text-shadow:1px 1px 1px #66130f ;
+        }
+        #section .process_box2 .step4_6 .step5{
+            position: relative;
+        }
+#section .process_box2 .step4_6 .step5:hover .front{
+            transform: rotateY(180deg);
+        }
+#section .process_box2 .step4_6 .step5:hover .back{
+            transform: rotateY(0deg);
+        }
+#section .process_box2 .step4_6 .step5a{
+            position: absolute; left:0; top:0;
+            backface-visibility: hidden;
+            transition: all 0.5s;
+            cursor:pointer;
+        }
+#section .process_box2 .step4_6 .step5 .front{
+            z-index: 3;
+        }
+#section .process_box2 .step4_6 .step5 .back{
+            transform: rotateY(180deg);
+            background-color: #b7221b;
+            background-image: url(images/join_7.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            border: 1px solid rgba(233, 233, 233, 0.596);
+            width: 450px; height: 550px;
+            box-shadow: 1px 1px 1px rgb(224, 223, 223);
+            border-radius: 20px;
+        }
+
+        /* step6 */
+#section .process_box2 .step4_6 .step6 .front{
+        background-image: url(images/join_9.png);
+        background-size: cover;
+        background-size: cover;width: 450px; height: 550px;
+        border: 1px solid rgba(233, 233, 233, 0.596);
+        border-radius: 20px;}
+
+    #section .process_box2 .step4_6 .step6 .step6_con1{
+        font-size: 80pt; font-weight: bolder; color:#f56764;
+        text-align: left; margin-left: 20px;
+    }
+    #section .process_box2 .step4_6 .step6 .step6_con2{
+        font-size: 80pt; font-weight: bolder; color:#f56764;
+        text-align: right; margin-right: 20px;
+
+    }
+    #section .process_box2 .step4_6 .step6{
+        position: relative; 
+    }
+#section .process_box2 .step4_6 .step6:hover .front{
+        transform: rotateY(180deg);
+    }
+#section .process_box2 .step4_6 .step6:hover .back{
+        transform: rotateY(0deg);
+    }
+#section .process_box2 .step4_6 .step6a{
+        position: absolute; left:0; top:0;
+        backface-visibility: hidden;
+        transition: all 0.5s;
+        cursor:pointer;
+    }
+#section .process_box2 .step4_6 .step6 .front{
+        z-index: 3;width: 450px;
+    }
+#section .process_box2 .step4_6 .step6 .back{
+        transform: rotateY(180deg);
+        background-color: #b7221b;
+        background-image: url(images/join_9.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        border: 1px solid rgba(233, 233, 233, 0.596);
+        width: 450px; height: 550px;
+        box-shadow: 1px 1px 1px rgb(224, 223, 223);
+        border-radius: 20px;
+    }
+#section .section_2 .process_box3{
+    width: 1450px; border: 1px solid rgba(233, 233, 233, 0.596);
+    border-radius: 20px; padding-top: 50px; line-height: 50px;
+    box-shadow: 1px 1px 1px rgb(224, 223, 223);
+    margin-bottom: 50px;
+    margin-top: 50px; height: 500px;}
+
+#section .section_2 .process_box3 .process_box_con {
+float: left; font-size: 20pt; text-align: center; line-height: 100px;
+margin-left: 200px; width: 800px; margin-top: 100px;}
+
+#section .section_2 .process_box3 .process_box_con span{
+    color:#b7221b; font-weight: bolder;
+}
+
+#section .section_2 .process_box3 img{
+    float: right;
+}
+
+#section .section_3{
+background-color :#fcd0cf; width: 100%; 
+}
+#section .section_3 .section_3_box{
+width:1520px; height: 1000px;  background-color: #ffffff; margin: 0 auto;
+}
+#section .section_3 .section_3_box .section_3_title{
+margin-left: 20px; padding-top: 30px;
+}
+#section .section_3 .section_3_box .section_3_title h2{
+float: left; font-weight: bolder; font-size: 30pt;
+}
+#section .section_3 .section_3_box .box1{
+    float: right; width: 200px; height: 30px; background-color: black;
+    margin-right: 50px; margin-top: 20px;
+}
+#section .section_3{
+    position: relative;
+}
+#section .section_3 .box2{
+    width: 1450px; height: 8px; background-color: black;
+    margin-left: 20px;
+}
+#section .section_3 .box3{
+    width: 1450px; height: 2px; background-color: black;
+    margin-left: 20px; margin-top: 2px;
+    
+}
+#section .section_3 .section_3_box .section_3_con h2{
+    float: left;  font-size: 40pt;
+    width: 500px; height: 300px; text-align: center;
+    padding-top: 300px; margin-right: 50px;
+}
+#section .section_3 .section_3_box .section_3_con h2 span{
+    color:#b7221b;
+}
+#section .section_3 img{
+    position: absolute; bottom: 160px;  left: 90px;
+    animation: scale 3s ease-in-out infinite ;
+}
+#section .section_3 .section_3_box .section3_service li{
+    float: left; width: 350px; height: 350px;
+    border-radius: 50%; margin-left: 100px; margin-top: 50px;
+    background-color: #b6b6b6;
+}
+#section .section_3 .section_3_box .section3_service li:hover{
+    background-color: #b7221b; color:#ffffff;
+    cursor: pointer;
+}
+#section .section_3 .section_3_box .section3_service li h3{
+    font-size: 30pt; line-height: 180px;text-align: center; color: rgb(0, 0, 0);
+}
+#section .section_3 .section_3_box .section3_service li p{
+    text-align: center; font-size: 18pt;
+}
+#section .section_3 .section_3_box .section_3_con .section_etc{
+    width: 600px; margin-bottom: 10px; margin-left: 150px; 
+    position: absolute; left: 100px; bottom: 50px;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+#footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(48, 48, 48);
+}
+
+#footer .f_ubox{
+    margin-left: 180px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#footer .f_ubox .SNS{
+    /* border: 1px dashed white; */
+    width: 800px;
+}
+
+#footer .f_ubox .SNS li{
+    float: left;
+    margin-left: 25px;
+    margin-top: 22px;
+    color: #FFF;
+    /* background-color: rgba(127, 255, 212, 0.397); */
+}
+
+#footer .f_ubox .SNS .ytube_b{
+    color: #fff;
+    font-size: 25pt;
+    font-weight: bold;
+    letter-spacing: -3px;
+    font-style: normal;
+    /* background-color: aqua; */
+    line-height: 43px;
+    padding-right: 25px;
+    border-right: 1px solid #fff;
+}
+
+#footer .f_ubox .inquiry{
+    float: right;
+    color: white;
+    text-align: right;
+    padding-right: 200px;
+}
+
+#footer .f_ubox .inquiry li{
+    font-size: 20pt;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+#footer .f_ubox .inquiry .inq_b1{
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+#footer .f_ubox .inquiry .inq_b2{
+    font-size: 16pt;
+}
+
+#footer .f_bbox{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    text-align: right;
+    overflow: hidden;
+    /* border: 1px dashed white; */
+    color: white;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+#footer .f_bbox li{
+    float: left;
+}
+
+#footer .f_bbox .f_gnb{
+    float: right;
+    width: 780px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* background-color: aquamarine; */
+}
+
+#footer .f_bbox .f_gnb li{
+    margin-left: 30px;
+    font-weight: 500;
+    /* border: 1px dashed red; */
+}
+
+#footer .f_bbox .f_gnb li a{
+    color: white;
+}
+
+#footer .f_bbox p{
+    float: right;
+    font-size: 11pt;
+    margin-bottom: 10px;
+    color: #c0bebe;
+    line-height: 30px;
+}
+
+#footer .f_bbox .f_logo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main_box_txt .mainment{
+    font-size: 50px;
+    min-width: 11px;
+    white-space: nowrap;
+    margin:0;
+    position: absolute;
+    color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#section .section_1 .main_box_txt  .mainment:before{
+    content: "왜 다들 듀오에서 짝을 찾을까?";
+    position: absolute;
+    bottom: 150px;
+    left: 80px;
+    width: 100%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 3s steps(51) forwards; 
+    
+    
+}
+@keyframes typing{
+    0%{
+    width: 0%;
+    }
+    100%{
+    width: 100%;
+    }
+}
+#section .section_1 .main_box_txt .mainment_2{
+    animation: fadein 0s 3s forwards ;
+    width: 100px;
+    position :relative; left:760px; top:280px;
+    opacity: 0;
+}
+#section .section_1 .main_box_txt .mainment_3{
+    animation: fadein 0s 3.5s forwards;
+    width: 100px;
+    position :relative;left:760px; top:300px;
+    opacity: 0;
+}
+#section .section_1 .main_box_txt .mainment_4{
+    animation: fadein 0s 4s forwards;
+    width: 100px;
+    position :relative;left:760px; top:320px;
+    opacity: 0;
+}
+#section .section_1 .main_box_txt .mainment_5{
+    animation: fadein 0s 5s forwards;
+    position :relative; left:50px; top:380px;
+    opacity: 0; font-size: 25pt; text-align: center;
+}
+#section .section_1 .main_box_txt .mainment_5 span{
+    color:#b7221b; font-weight: 500;
+}
+
+#section .section_1 .main_box_txt .highlight{
+    width: 1px; height: 50px;
+    background-color: #f5666423;
+    position: relative; left: 800px; top:350px;
+    animation:highlighter 0.3s 5s forwards;
+    
+}
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity:1;}
+}
+
+@keyframes highlighter{
+    0% {transform : scaleX(100)}
+    10% {transform : scaleX(200)}
+    20% {transform : scaleX(300)}
+    30% {transform : scaleX(400)}
+    40% {transform : scaleX(500)}
+    50% {transform : scaleX(600)}
+    60% {transform : scaleX(700)}
+    70% {transform: scaleX(800);}
+    80% {transform: scaleX(900);}
+    90% {transform: scaleX(1000);}
+    100% {transform: scaleX(1100);}
+}
+
+#header .header_etc .number:hover{
+  animation: shake 0.3s ease-in-out;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+0% {
+  transform: rotate(0);
+}
+25% {
+  transform: rotate(-10deg);
+}
+50% {
+  transform: rotate(10deg);
+}
+
+}
